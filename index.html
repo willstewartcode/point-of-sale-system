@@ -1,0 +1,57 @@
+<!-- 
+    Will Stewart
+    CSCI 3300 W1
+    21 April 2021
+    Assignment 7 - Q3 - Point of Sale System
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Stewart's Point of Sale System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Will Stewart's Point of Sale System</h1>
+    </header>
+    <section>
+        <h3>Products:</h3>
+        <ul>
+            <li>Umbrella: $14.99</li>
+            <li>Rain Coat: $119.99</li>
+            <li>Swimsuit: $40.00</li>
+        </ul>
+
+        <form name="orderForm" action="javascript:getOrders();"> 
+            <label for="product">Item:</label>
+            <select name="product" id="product">
+                <option value="Umbrella">Umbrella</option>
+                <option value="Rain Coat">Rain Coat</option>
+                <option value="Swimsuit">Swimsuit</option>
+            </select>
+
+            <label for="quantity">Amount:</label>
+            <input type="number" name="quantity" id="quantity" min="1">
+
+            <input type="submit" id="submit" value="&#x1f6d2; Add to Cart">
+        </form>
+        
+        <ul id="results"></ul><br>
+        <p id="error-message"></p><br>
+        <p>Total Price: $<span id="total">0</span></p>
+    </section>
+
+    <footer><p>&#169; 2021 Will Stewart</p></footer>
+</body>
+
+</html>

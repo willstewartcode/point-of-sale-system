@@ -21,7 +21,7 @@ function getOrders() {
         let cost = 0;   // Price of individual item * quantity
 
         let products = ["Umbrella", "Rain Coat", "Swimsuit"];
-        let prices = [14.95, 119.99, 40.00];
+        let prices = [14.99, 119.99, 40.00];
         // console.log(products+"\n"+prices)
 
         // Calculates cost based on product chosen and quantity entered
@@ -40,7 +40,7 @@ function getOrders() {
 
         // console.log("Cost: "+cost+"\nTotal: "+totalPrice);
 
-        document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- Cost: $" + cost + "</li>";
+        document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- Cost: $" + cost.toFixed(2) + "</li>";
         document.getElementById("total").innerHTML=totalPrice;
     }
 

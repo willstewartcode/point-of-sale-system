@@ -107,6 +107,10 @@ select {
     transform: scale(.9);
 }
 
+#totaltext {
+    color: var(--PAPAYA);
+}
+
 footer {
     padding: .75rem;
     text-align: center;

@@ -21,35 +21,35 @@
 </head>
 
 <body>
-    <header>
-        <h1>Will Stewart's Point of Sale System</h1>
-    </header>
-    <section>
-        <h3>Products:</h3>
-        <ul>
-            <li>Umbrella: $14.99</li>
-            <li>Rain Coat: $119.99</li>
-            <li>Swimsuit: $40.00</li>
-        </ul>
-
-        <form name="orderForm" action="javascript:getOrders();"> 
-            <label for="product">Item:</label>
-            <select name="product" id="product">
-                <option value="Umbrella">Umbrella</option>
-                <option value="Rain Coat">Rain Coat</option>
-                <option value="Swimsuit">Swimsuit</option>
-            </select>
-
-            <label for="quantity">Amount:</label>
-            <input type="number" name="quantity" id="quantity" min="1">
-
-            <input type="submit" id="submit" value="&#x1f6d2; Add to Cart">
-        </form>
+    <div class="content-wrapper">
+        <header>
+            <h1>Will Stewart's Point of Sale System</h1>
+        </header>
+        <section>
+            <h3>Products</h3>
+            <ul>
+                <li>Umbrella: $14.99</li>
+                <li>Rain Coat: $119.99</li>
+                <li>Swimsuit: $40.00</li>
+            </ul>
+            <form name="orderForm" action="javascript:getOrders();">
+                <label for="product">Item:</label>
+                <select name="product" id="product">
+                    <option value="Umbrella">Umbrella</option>
+                    <option value="Rain Coat">Rain Coat</option>
+                    <option value="Swimsuit">Swimsuit</option>
+                </select>
+                <label for="quantity">Amount:</label>
+                <input type="number" name="quantity" id="quantity" min="1">
+                <br><br>
+                <input type="submit" id="submit" value="&#x1f6d2; Add to Cart">
+            </form>
         
-        <ul id="results"></ul><br>
-        <p id="error-message"></p><br>
-        <p>Total Price: $<span id="total">0</span></p>
-    </section>
+            <ul id="results"></ul><br>
+            <p id="error-message"></p><br>
+            <p>Total Price: $<span id="total">0</span></p>
+        </section>
+    </div>
 
     <footer><p>&#169; 2021 Will Stewart</p></footer>
 </body>

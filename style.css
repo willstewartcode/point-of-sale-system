@@ -1,5 +1,5 @@
 :root {
-    --PAPAYA: #E24E42;
+    --PRIMARY: #ef233c;
     --AQUA: #008F95;
     --LIGHT-GRAY: #f2f6fc;
 }
@@ -21,7 +21,7 @@ html {
 body {
     font-size: 1.1rem;
     line-height: 1.75rem;
-    width: fit-content;
+    width: 800px;
     margin: 50px auto;
     border-radius: 12px;
     background-color: white;
@@ -33,12 +33,12 @@ body {
 }
 
 h1 {
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
     margin-bottom: 3rem;
 }
 
 h3 {
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
     font-weight: 500;
     margin-bottom: .5rem;
 }
@@ -50,7 +50,7 @@ ul {
 
 ul li::before {
     content: "\002D";
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -68,7 +68,7 @@ form {
 
 label {
     font-weight: bold;
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
     margin-right: .5rem;
 }
 
@@ -92,14 +92,14 @@ select {
     height: 2.8rem;
     padding: .5rem 2rem;
     font-weight: bold;
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
     transition: 100ms;
-    border-bottom: 1px solid var(--PAPAYA);
+    border-bottom: 1px solid var(--PRIMARY);
 }
 
 #submit:hover {
     color: white;
-    background-color: var(--PAPAYA);
+    background-color: var(--PRIMARY);
     cursor: pointer;
 }
 
@@ -108,7 +108,7 @@ select {
 }
 
 #totaltext {
-    color: var(--PAPAYA);
+    color: var(--PRIMARY);
 }
 
 footer {

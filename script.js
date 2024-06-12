@@ -40,7 +40,7 @@ function getOrders() {
 
         // console.log("Cost: "+cost+"\nTotal: "+totalPrice);
 
-        document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- Cost: $" + cost.toFixed(2) + "</li>";
+        document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- $" + cost.toFixed(2) + "</li>";
         document.getElementById("total").innerHTML=totalPrice;
     }
 

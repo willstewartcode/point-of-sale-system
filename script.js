@@ -38,10 +38,18 @@ function getOrders() {
 
         totalPrice = totalPrice.toFixed(2);
 
-        // console.log("Cost: "+cost+"\nTotal: "+totalPrice);
+        console.log("Cost: "+cost+"\nTotal: "+totalPrice);
 
         document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- $" + cost.toFixed(2) + "</li>";
         document.getElementById("total").innerHTML=totalPrice;
     }
 
+}
+
+function clearOrders() {
+    totalPrice = 0;
+    console.log("Total: "+totalPrice);
+
+    document.getElementById("results").innerHTML="";
+    document.getElementById("total").innerHTML=totalPrice;
 }

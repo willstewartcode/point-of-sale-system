@@ -1,6 +1,8 @@
 // Total price declared outside of function so running total can be kept
 let totalPrice = 0;
 
+const cartItems = [];
+
 /*
     Takes input from the user on the product they selected and the
     quantity they want, then displays the cost and total price of
@@ -22,6 +24,7 @@ function getOrders() {
 
         let products = ["Umbrella", "Rain Coat", "Swimsuit"];
         let prices = [14.99, 119.99, 40.00];
+        let results = document.getElementById("results");
         // console.log(products+"\n"+prices)
 
         // Calculates cost based on product chosen and quantity entered
@@ -38,14 +41,22 @@ function getOrders() {
 
         totalPrice = totalPrice.toFixed(2);
 
-        console.log("Cost: "+cost+"\nTotal: "+totalPrice);
+        // console.log("Cost: "+cost+"\nTotal: "+totalPrice);
 
-        document.getElementById("results").innerHTML+="<li>"+productChosen+" (Quantity: " + quantityEntered + ") --- $" + cost.toFixed(2) + "</li>";
+        results.innerHTML+="<li class=\"cart-item\">"+productChosen+" (Quantity: " + quantityEntered + ") --- $" + cost.toFixed(2) + "</li>";
+
+        let lastestCartItem = results.lastElementChild;
+        lastestCartItem.classList.add('animate');
+        lastestCartItem.onanimationend = function() {
+            this.classList.remove('animate');
+        }
+
         document.getElementById("total").innerHTML=totalPrice;
     }
 
 }
 
+// Resets total to $0 and clears output fields
 function clearOrders() {
     totalPrice = 0;
     console.log("Total: "+totalPrice);

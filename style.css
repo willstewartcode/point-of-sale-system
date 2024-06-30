@@ -1,7 +1,7 @@
 :root {
-    --PRIMARY: #ef233c;
+    --PRIMARY: #EC407A;
     --AQUA: #008F95;
-    --LIGHT-GRAY: #f2f6fc;
+    --LIGHT-GRAY: #ECEFF1;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
     max-width: 800px;
     margin: 50px auto;
     border-radius: 12px;
-    background-color: white;
+    background-color: #FAFAFA;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -56,7 +56,6 @@ ul {
 ul li::before {
     content: "|";
     color: var(--PRIMARY);
-    font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -97,7 +96,7 @@ label {
     color: var(--PRIMARY);
 }
 
-input, select {
+input, select, #clear {
     font-weight: 500;
     padding: .7rem 1rem;
     width: 6rem;
@@ -112,7 +111,8 @@ select {
     width: auto;
 }
 
-#submit {
+#submit,
+#clear {
     width: auto;
     height: 2.8rem;
     padding: .5rem 2rem;
@@ -122,7 +122,8 @@ select {
     border-bottom: 1px solid var(--PRIMARY);
 }
 
-#submit:hover {
+#submit:hover,
+#clear:hover {
     color: white;
     background-color: var(--PRIMARY);
     cursor: pointer;
